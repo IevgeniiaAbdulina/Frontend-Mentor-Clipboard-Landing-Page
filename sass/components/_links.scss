@@ -1,0 +1,14 @@
+// Social Icons variables
+@import "../fontawesome/scss/fontawesome.scss";
+@import "../fontawesome/scss/solid.scss";
+@import "../fontawesome/scss/brands.scss";
+
+.twitter {
+  @extend %fa-icon;
+  @extend .fa;
+
+  &:before {
+    content: fa-content($fa-var-twitter);
+    color: black;
+  }
+}
