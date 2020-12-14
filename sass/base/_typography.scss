@@ -1,3 +1,5 @@
+/* ==== Typography ====  */
+
 // Font weights
 $regular: 400;
 $bold: 600;
@@ -11,12 +13,6 @@ $base-font-size: 18px;
 
 //  Headings
 $header-font-weight: $bold;
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 body {
   font-family: $base-font-family;

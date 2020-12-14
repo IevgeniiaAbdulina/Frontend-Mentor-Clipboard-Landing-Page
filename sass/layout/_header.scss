@@ -1,0 +1,8 @@
+/* ==== Layout/Header ==== */
+
+.header-wrapper {
+  background: url(../../images/bg-header-desktop.png);
+  @media (max-width: 375px) {
+    background: url(../../images/bg-header-mobile.png);
+  }
+}

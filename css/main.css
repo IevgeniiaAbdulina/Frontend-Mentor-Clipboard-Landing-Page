@@ -1,17 +1,23 @@
 /* ----------------------------------
-    [master Stylsheet] 
+    [master Stylesheet] 
 
     Project: Clipboard Landing Page
     Version: 1.0.0
 ---------------------------------- */
-/* ==== Content ==== */
+/* ----------------------------------
+    ==== File Structure  ==== 
+        * Typography
+        * Variables
+        * Components/Buttons
+        * Components/Links
+        * Font Awesome
+        * Layout/Body
+        * Layout/Footer
+        * Layout/Header
+---------------------------------- */
+/* ==== Variables ==== */
+/* ==== Typography ====  */
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: "Bai Jamjuree", sans-serif;
   color: #9fabb2;
@@ -24,6 +30,9 @@ h1 {
   color: #4c545d;
 }
 
+/* ==== Components/Buttons ==== */
+/* ==== Components/Links ==== */
+/* ==== Font Awesome ====  */
 /*!
  * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6142,9 +6151,43 @@ readers do not read off random characters that represent icons */
 
 .twitter:before {
   content: "\f099";
-  color: black;
 }
 
+/* ==== Layout/Body ==== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+  body {
+    max-width: 100%;
+  }
+}
+
+.container {
+  padding: 80px 0;
+  border: 1px solid paleturquoise;
+}
+
+/* ==== Layout/Header ==== */
+.header-wrapper {
+  background: url(../../images/bg-header-desktop.png);
+}
+
+@media (max-width: 375px) {
+  .header-wrapper {
+    background: url(../../images/bg-header-mobile.png);
+  }
+}
+
+/* ==== Layout/Footer ==== */
 .attribution {
   font-size: 11px;
   text-align: center;

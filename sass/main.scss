@@ -1,11 +1,21 @@
 /* ----------------------------------
-    [master Stylsheet] 
+    [master Stylesheet] 
 
     Project: Clipboard Landing Page
     Version: 1.0.0
 ---------------------------------- */
 
-/* ==== Content ==== */
+/* ----------------------------------
+    ==== File Structure  ==== 
+        * Typography
+        * Variables
+        * Components/Buttons
+        * Components/Links
+        * Font Awesome
+        * Layout/Body
+        * Layout/Footer
+        * Layout/Header
+---------------------------------- */
 
 // Base
 @import "base/variables";
@@ -16,5 +26,6 @@
 @import "components/links";
 
 // Layout
+@import "layout/body";
 @import "layout/header";
 @import "layout/footer";

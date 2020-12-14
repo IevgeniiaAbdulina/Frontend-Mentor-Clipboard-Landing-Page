@@ -1,3 +1,5 @@
+/* ==== Components/Links ==== */
+
 // Social Icons variables
 @import "../fontawesome/scss/fontawesome.scss";
 @import "../fontawesome/scss/solid.scss";
@@ -9,6 +11,5 @@
 
   &:before {
     content: fa-content($fa-var-twitter);
-    color: black;
   }
 }

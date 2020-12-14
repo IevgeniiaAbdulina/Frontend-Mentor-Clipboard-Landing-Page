@@ -1,0 +1,20 @@
+/* ==== Layout/Body ==== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: $layout-desktop;
+  @media (max-width: 1440px) {
+    max-width: 100%;
+  }
+  margin: 0 auto;
+}
+
+.container {
+  padding: 80px 0;
+  border: 1px solid paleturquoise;
+}
