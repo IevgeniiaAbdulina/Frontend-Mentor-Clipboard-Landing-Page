@@ -30,7 +30,49 @@ h1 {
   color: #4c545d;
 }
 
+p {
+  padding: 18px 0;
+}
+
 /* ==== Components/Buttons ==== */
+.buttons-wrapper, .button {
+  display: flex;
+  justify-content: center;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button {
+  margin: 12px;
+  padding: 12px 24px;
+  border-radius: 48px;
+  color: #fff;
+}
+
+.green-button {
+  box-shadow: 0 2px 0 2px #1d907f;
+  background-color: #26baa4;
+}
+
+.green-button:hover {
+  background-color: #3cd7c0;
+  box-shadow: 0 2px 0 2px #1d907f, 0 8px 16px 8px rgba(38, 186, 164, 0.24);
+}
+
+.blue-button {
+  box-shadow: 0 2px 0 2px #2e46ff;
+  background-color: #6173ff;
+}
+
+.blue-button:hover {
+  background-color: #94a0ff;
+  box-shadow: 0 2px 0 2px #2e46ff, 0 8px 16px 8px rgba(97, 115, 255, 0.24);
+}
+
 /* ==== Components/Links ==== */
 /* ==== Font Awesome ====  */
 /*!
@@ -6174,7 +6216,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  padding: 80px 0;
+  padding: 0 0 80px 0;
   border: 1px solid paleturquoise;
 }
 
@@ -6196,6 +6238,10 @@ body {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
+}
+
+.content-header img {
+  margin: 80px 0;
 }
 
 /* ==== Layout/Footer ==== */

@@ -1,1 +1,42 @@
 /* ==== Components/Buttons ==== */
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button {
+  @extend .buttons-wrapper;
+  margin: 12px;
+  padding: 12px 24px;
+  border-radius: 48px;
+  color: #fff;
+}
+
+.green-button {
+  box-shadow: 0 2px 0 2px rgba(darken($primary-color-strong-cyan, 10%), 1);
+  background-color: $primary-color-strong-cyan;
+
+  &:hover {
+    background-color: lighten($primary-color-strong-cyan, 10%);
+    box-shadow: 0 2px 0 2px rgba(darken($primary-color-strong-cyan, 10%), 1),
+      0 8px 16px 8px rgba($primary-color-strong-cyan, 0.24);
+  }
+}
+
+.blue-button {
+  box-shadow: 0 2px 0 2px rgba(darken($primary-color-light-blue, 10%), 1);
+  background-color: $primary-color-light-blue;
+
+  &:hover {
+    background-color: lighten($primary-color-light-blue, 10%);
+    box-shadow: 0 2px 0 2px rgba(darken($primary-color-light-blue, 10%), 1),
+      0 8px 16px 8px rgba($primary-color-light-blue, 0.24);
+  }
+}
