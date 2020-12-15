@@ -23,9 +23,11 @@ body {
   color: #9fabb2;
   font-weight: 400;
   font-size: 18px;
+  line-height: normal;
 }
 
-h1 {
+h1,
+h3 {
   font-weight: 600;
   color: #4c545d;
 }
@@ -6217,7 +6219,30 @@ body {
   display: flex;
   flex-direction: column;
   padding: 80px 0;
+  overflow: hidden;
   border: 1px solid paleturquoise;
+}
+
+/* Snippets Section */
+.snippets {
+  display: flex;
+  padding: 80px 0;
+  justify-content: center;
+}
+
+.snippets-image {
+  position: relative;
+  right: 160px;
+}
+
+.snippets-text {
+  display: flex;
+  max-width: 30%;
+  align-items: center;
+}
+
+.snippets-text ul {
+  list-style-type: none;
 }
 
 /* ==== Layout/Header ==== */

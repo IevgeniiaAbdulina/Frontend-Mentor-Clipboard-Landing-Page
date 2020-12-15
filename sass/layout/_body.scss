@@ -18,5 +18,28 @@ body {
   display: flex;
   flex-direction: column;
   padding: 80px 0;
+  overflow: hidden;
   border: 1px solid paleturquoise;
+}
+
+/* Snippets Section */
+.snippets {
+  display: flex;
+  padding: 80px 0;
+  justify-content: center;
+
+  &-image {
+    position: relative;
+    right: 160px;
+  }
+
+  &-text {
+    display: flex;
+    max-width: 30%;
+    align-items: center;
+
+    ul {
+      list-style-type: none;
+    }
+  }
 }
