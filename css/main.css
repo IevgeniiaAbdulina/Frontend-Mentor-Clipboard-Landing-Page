@@ -6216,7 +6216,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  padding: 0 0 80px 0;
+  padding: 80px 0;
   border: 1px solid paleturquoise;
 }
 
@@ -6229,6 +6229,10 @@ body {
   .header-wrapper {
     background: url(../../images/bg-header-mobile.png) no-repeat top;
   }
+}
+
+.header-wrapper .container {
+  padding: 0 0 80px 0;
 }
 
 .content-header {
