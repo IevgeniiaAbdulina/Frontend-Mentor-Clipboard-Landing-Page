@@ -50,3 +50,42 @@ body {
   justify-content: center;
   padding: 80px;
 }
+
+/* Tools Section */
+.tools {
+  display: flex;
+  text-align: center;
+  padding: 80px 0;
+
+  &-blacklists {
+    flex: 1;
+    padding: 0 18px;
+  }
+
+  &-text {
+    flex: 1;
+    padding: 0 18px;
+
+    img {
+      padding: 8px 0 0 0;
+    }
+  }
+
+  &-preview {
+    flex: 1;
+    padding: 0 18px;
+
+    img {
+      padding: 8px 0 0 0;
+    }
+  }
+}
+
+.companies {
+  display: flex;
+  justify-content: space-between;
+
+  &-logos {
+    align-content: center;
+  }
+}

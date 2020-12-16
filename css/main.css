@@ -30,6 +30,7 @@ h1,
 h3 {
   font-weight: 600;
   color: #4c545d;
+  padding: 18px 0;
 }
 
 p {
@@ -6250,6 +6251,45 @@ body {
   display: flex;
   justify-content: center;
   padding: 80px;
+}
+
+/* Tools Section */
+.tools {
+  display: flex;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.tools-blacklists {
+  flex: 1;
+  padding: 0 18px;
+}
+
+.tools-text {
+  flex: 1;
+  padding: 0 18px;
+}
+
+.tools-text img {
+  padding: 8px 0 0 0;
+}
+
+.tools-preview {
+  flex: 1;
+  padding: 0 18px;
+}
+
+.tools-preview img {
+  padding: 8px 0 0 0;
+}
+
+.companies {
+  display: flex;
+  justify-content: space-between;
+}
+
+.companies-logos {
+  align-content: center;
 }
 
 /* ==== Layout/Header ==== */
