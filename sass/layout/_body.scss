@@ -19,7 +19,6 @@ body {
   flex-direction: column;
   padding: 80px 0;
   overflow: hidden;
-  border: 1px solid paleturquoise;
 }
 
 /* Snippets Section */
@@ -84,6 +83,7 @@ body {
 .companies {
   display: flex;
   justify-content: space-between;
+  padding: 60px 0;
 
   &-logos {
     align-content: center;

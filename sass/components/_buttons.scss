@@ -22,21 +22,21 @@
 .green-button {
   box-shadow: 0 2px 0 2px rgba(darken($primary-color-strong-cyan, 10%), 1);
   background-color: $primary-color-strong-cyan;
+  box-shadow: 0 2px 0 2px rgba(darken($primary-color-strong-cyan, 10%), 1),
+    0 8px 16px 8px rgba($primary-color-strong-cyan, 0.24);
 
   &:hover {
     background-color: lighten($primary-color-strong-cyan, 10%);
-    box-shadow: 0 2px 0 2px rgba(darken($primary-color-strong-cyan, 10%), 1),
-      0 8px 16px 8px rgba($primary-color-strong-cyan, 0.24);
   }
 }
 
 .blue-button {
   box-shadow: 0 2px 0 2px rgba(darken($primary-color-light-blue, 10%), 1);
   background-color: $primary-color-light-blue;
+  box-shadow: 0 2px 0 2px rgba(darken($primary-color-light-blue, 10%), 1),
+    0 8px 16px 8px rgba($primary-color-light-blue, 0.24);
 
   &:hover {
     background-color: lighten($primary-color-light-blue, 10%);
-    box-shadow: 0 2px 0 2px rgba(darken($primary-color-light-blue, 10%), 1),
-      0 8px 16px 8px rgba($primary-color-light-blue, 0.24);
   }
 }
