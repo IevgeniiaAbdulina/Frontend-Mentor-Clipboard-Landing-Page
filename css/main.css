@@ -6245,6 +6245,13 @@ body {
   list-style-type: none;
 }
 
+/* Clipboard Section */
+.clipboard {
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+}
+
 /* ==== Layout/Header ==== */
 .header-wrapper {
   background: url(../../images/bg-header-desktop.png) no-repeat top;
