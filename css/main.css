@@ -82,12 +82,15 @@ p {
  * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-.fa, .twitter,
+.fa,
 .fas,
 .far,
 .fal,
 .fad,
-.fab {
+.fab,
+.facebook,
+.twitter,
+.instagram {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -97,7 +100,7 @@ p {
   line-height: 1;
 }
 
-.twitter {
+.facebook, .twitter, .instagram {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -198,19 +201,25 @@ p {
   float: right;
 }
 
-.fa.fa-pull-left, .fa-pull-left.twitter,
+.fa.fa-pull-left,
 .fas.fa-pull-left,
 .far.fa-pull-left,
 .fal.fa-pull-left,
-.fab.fa-pull-left {
+.fab.fa-pull-left,
+.fa-pull-left.facebook,
+.fa-pull-left.twitter,
+.fa-pull-left.instagram {
   margin-right: .3em;
 }
 
-.fa.fa-pull-right, .fa-pull-right.twitter,
+.fa.fa-pull-right,
 .fas.fa-pull-right,
 .far.fa-pull-right,
 .fal.fa-pull-right,
-.fab.fa-pull-right {
+.fab.fa-pull-right,
+.fa-pull-right.facebook,
+.fa-pull-right.twitter,
+.fa-pull-right.instagram {
   margin-left: .3em;
 }
 
@@ -6170,7 +6179,7 @@ readers do not read off random characters that represent icons */
   src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 
-.fa, .twitter,
+.fa,
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
@@ -6189,13 +6198,49 @@ readers do not read off random characters that represent icons */
   src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg");
 }
 
-.fab {
+
+.fab,
+.facebook,
+.twitter,
+.instagram {
   font-family: 'Font Awesome 5 Brands';
   font-weight: 400;
 }
 
+.facebook {
+  color: #4c545d;
+}
+
+.facebook:before {
+  content: "\f39e";
+}
+
+.facebook:hover {
+  color: #26baa4;
+}
+
+.twitter {
+  color: #4c545d;
+}
+
 .twitter:before {
   content: "\f099";
+}
+
+.twitter:hover {
+  color: #26baa4;
+}
+
+.instagram {
+  color: #4c545d;
+}
+
+.instagram:before {
+  content: "\f16d";
+}
+
+.instagram:hover {
+  color: #26baa4;
 }
 
 /* ==== Layout/Body ==== */
@@ -6365,6 +6410,7 @@ body {
 .social-links {
   display: flex;
   align-items: center;
+  font-size: 24px;
 }
 
 .social-links a {

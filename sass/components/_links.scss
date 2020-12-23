@@ -5,11 +5,41 @@
 @import "../fontawesome/scss/solid.scss";
 @import "../fontawesome/scss/brands.scss";
 
+.facebook {
+  @extend %fa-icon;
+  @extend .fab;
+  color: $neutral-color-dark-grayish-blue;
+
+  &:before {
+    content: fa-content($fa-var-facebook-f);
+  }
+  &:hover {
+    color: $primary-color-strong-cyan;
+  }
+}
+
 .twitter {
   @extend %fa-icon;
-  @extend .fa;
+  @extend .fab;
+  color: $neutral-color-dark-grayish-blue;
 
   &:before {
     content: fa-content($fa-var-twitter);
+  }
+  &:hover {
+    color: $primary-color-strong-cyan;
+  }
+}
+
+.instagram {
+  @extend %fa-icon;
+  @extend .fab;
+  color: $neutral-color-dark-grayish-blue;
+
+  &:before {
+    content: fa-content($fa-var-instagram);
+  }
+  &:hover {
+    color: $primary-color-strong-cyan;
   }
 }
