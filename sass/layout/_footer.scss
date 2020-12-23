@@ -52,10 +52,13 @@
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 18px;
   text-align: center;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+  &:hover {
+    color: $primary-color-strong-cyan;
+  }
 }
