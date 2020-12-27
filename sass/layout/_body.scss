@@ -25,6 +25,12 @@ body {
   }
 }
 
+.content-header {
+  @media (min-width: 320px) and (max-width: 480px) {
+    padding: 80px 0 0;
+  }
+}
+
 /* Snippets Section */
 .snippets {
   display: flex;
@@ -32,6 +38,7 @@ body {
   justify-content: center;
   @media (min-width: 320px) and (max-width: 480px) {
     flex-direction: column;
+    padding: 40px 0;
   }
 
   &-image {
@@ -69,6 +76,10 @@ body {
   justify-content: center;
   padding: 80px 0;
   @media (min-width: 320px) and (max-width: 480px) {
+    padding: 40px 0 0;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
     img {
       max-width: 100%;
     }
@@ -90,14 +101,14 @@ body {
 
   &-blacklists {
     flex: 1;
-    padding: 0 18px;
+    padding: 0 20px;
   }
 
   &-text {
     flex: 1;
     padding: 0 18px;
     @media (min-width: 320px) and (max-width: 480px) {
-      padding: 60px 18px;
+      padding: 40px 20px;
     }
 
     img {
@@ -107,7 +118,7 @@ body {
 
   &-preview {
     flex: 1;
-    padding: 0 18px;
+    padding: 0 20px;
 
     img {
       padding: 8px 0 0 0;

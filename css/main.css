@@ -6291,6 +6291,12 @@ body {
   }
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .content-header {
+    padding: 80px 0 0;
+  }
+}
+
 /* Snippets Section */
 .snippets {
   display: flex;
@@ -6301,6 +6307,7 @@ body {
 @media (min-width: 320px) and (max-width: 480px) {
   .snippets {
     flex-direction: column;
+    padding: 40px 0;
   }
 }
 
@@ -6345,6 +6352,12 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .clipboard {
+    padding: 40px 0 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
   .clipboard img {
     max-width: 100%;
   }
@@ -6368,7 +6381,7 @@ body {
 
 .tools-blacklists {
   flex: 1;
-  padding: 0 18px;
+  padding: 0 20px;
 }
 
 .tools-text {
@@ -6378,7 +6391,7 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .tools-text {
-    padding: 60px 18px;
+    padding: 40px 20px;
   }
 }
 
@@ -6388,7 +6401,7 @@ body {
 
 .tools-preview {
   flex: 1;
-  padding: 0 18px;
+  padding: 0 20px;
 }
 
 .tools-preview img {
@@ -6435,7 +6448,7 @@ body {
 
 @media (max-width: 376px) {
   .header-wrapper .container {
-    padding: 0 20px 80px;
+    padding: 0 20px;
   }
 }
 
@@ -6452,9 +6465,21 @@ body {
   margin: 80px 0;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .content-header img {
+    margin: 40px 0;
+  }
+}
+
 /* ==== Layout/Footer ==== */
 footer {
   background-color: #ebedef;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  footer {
+    margin: 140px 0 0;
+  }
 }
 
 .footer {
