@@ -21,7 +21,7 @@ body {
   padding: 80px 0;
   overflow: hidden;
   @media (max-width: $layout-mobile + 1px) {
-    padding: 0 18px;
+    padding: 0 20px;
   }
 }
 
@@ -37,7 +37,7 @@ body {
   &-image {
     position: relative;
     right: 160px;
-    @media (max-width: $layout-mobile + 1px) {
+    @media (min-width: 320px) and (max-width: 480px) {
       max-width: 100%;
       right: 0;
     }
@@ -47,7 +47,7 @@ body {
     display: flex;
     max-width: 30%;
     align-items: center;
-    @media (max-width: $layout-mobile + 1px) {
+    @media (min-width: 320px) and (max-width: 480px) {
       text-align: center;
       max-width: 100%;
 
@@ -68,7 +68,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 80px 0;
-  @media (max-width: $layout-mobile + 1px) {
+  @media (min-width: 320px) and (max-width: 480px) {
     img {
       max-width: 100%;
     }
@@ -80,6 +80,13 @@ body {
   display: flex;
   text-align: center;
   padding: 80px 0;
+  @media (min-width: 320px) and (max-width: 480px) {
+    flex-direction: column;
+
+    h3 {
+      font-size: 24px;
+    }
+  }
 
   &-blacklists {
     flex: 1;
@@ -89,6 +96,9 @@ body {
   &-text {
     flex: 1;
     padding: 0 18px;
+    @media (min-width: 320px) and (max-width: 480px) {
+      padding: 60px 18px;
+    }
 
     img {
       padding: 8px 0 0 0;
@@ -109,8 +119,15 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 60px 0;
+  @media (min-width: 320px) and (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+  }
 
   &-logos {
     align-content: center;
+    @media (min-width: 320px) and (max-width: 480px) {
+      padding: 40px 0;
+    }
   }
 }
