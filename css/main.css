@@ -6341,7 +6341,13 @@ body {
 .clipboard {
   display: flex;
   justify-content: center;
-  padding: 80px;
+  padding: 80px 0;
+}
+
+@media (max-width: 376px) {
+  .clipboard img {
+    max-width: 100%;
+  }
 }
 
 /* Tools Section */
