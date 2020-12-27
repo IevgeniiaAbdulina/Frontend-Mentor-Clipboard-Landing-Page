@@ -30,16 +30,32 @@ body {
   display: flex;
   padding: 80px 0;
   justify-content: center;
+  @media (min-width: 320px) and (max-width: 480px) {
+    flex-direction: column;
+  }
 
   &-image {
     position: relative;
     right: 160px;
+    @media (max-width: $layout-mobile + 1px) {
+      max-width: 100%;
+      right: 0;
+    }
   }
 
   &-text {
     display: flex;
     max-width: 30%;
     align-items: center;
+    @media (max-width: $layout-mobile + 1px) {
+      text-align: center;
+      max-width: 100%;
+
+      h3 {
+        font-size: 24px;
+        padding: 60px 0 0;
+      }
+    }
 
     ul {
       list-style-type: none;
