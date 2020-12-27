@@ -9,6 +9,11 @@
   line-height: normal;
   text-align: center;
   text-decoration: none;
+  padding: 20px 0;
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    flex-direction: column;
+  }
 }
 
 .button {
@@ -17,10 +22,12 @@
   padding: 12px 24px;
   border-radius: 48px;
   color: #fff;
+  @media (max-width: $layout-mobile + 1px) {
+    flex: 1;
+  }
 }
 
 .green-button {
-  box-shadow: 0 2px 0 2px rgba(darken($primary-color-strong-cyan, 10%), 1);
   background-color: $primary-color-strong-cyan;
   box-shadow: 0 2px 0 2px rgba(darken($primary-color-strong-cyan, 10%), 1),
     0 8px 16px 8px rgba($primary-color-strong-cyan, 0.24);
@@ -31,7 +38,6 @@
 }
 
 .blue-button {
-  box-shadow: 0 2px 0 2px rgba(darken($primary-color-light-blue, 10%), 1);
   background-color: $primary-color-light-blue;
   box-shadow: 0 2px 0 2px rgba(darken($primary-color-light-blue, 10%), 1),
     0 8px 16px 8px rgba($primary-color-light-blue, 0.24);
