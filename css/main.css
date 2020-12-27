@@ -6453,12 +6453,22 @@ body {
 }
 
 /* ==== Layout/Footer ==== */
+footer {
+  background-color: #ebedef;
+}
+
 .footer {
   display: flex;
   justify-content: space-around;
-  background-color: #ebedef;
   color: #4c545d;
   padding: 20px 0;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer-logo {
@@ -6471,14 +6481,33 @@ body {
   height: auto;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .footer-logo img {
+    padding: 40px 0;
+  }
+}
+
 .navigation {
   display: flex;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .navigation {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .navigation-links {
   display: flex;
   flex-direction: column;
   padding: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .navigation-links {
+    padding: 0 20px;
+  }
 }
 
 .navigation-links a {
@@ -6500,8 +6529,21 @@ body {
   font-size: 24px;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .social-links {
+    font-size: 28px;
+    padding: 20px 0;
+  }
+}
+
 .social-links a {
   padding: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .social-links a {
+    padding: 0 20px;
+  }
 }
 
 .attribution {
